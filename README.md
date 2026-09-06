@@ -1,4 +1,4 @@
-# Java ATM Mini Project
+# Java ATM Simulator
 
 A Java ATM mini project I'm building while revising Java and practising object-oriented programming.
 
