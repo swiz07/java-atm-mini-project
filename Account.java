@@ -1,8 +1,8 @@
 public class Account{
-  String name;
-  int pin;
-  double balance;
-  int accountNum;
+  private String name;
+  private int pin;
+  private double balance;
+  private final int accountNum;
 
 
   Account(String name, double balance, int accountNum, int pin){
@@ -12,13 +12,27 @@ public class Account{
     this.pin=pin;
   }
 
+  // getters
+  public String getName(){
+    return this.name;
+  }
+
+  public int getAccountNum(){
+    return this.accountNum;
+  }
+
+  //setters
+  public void setName(String name){
+    this.name=name;
+  }
+
 //checks balance method
-  void checkBalance(){
+  public void checkBalance(){
     System.out.println("Here is the balance you have: "+ this.balance);
   }
 
 //deposit money method
-  void depositMoney(double deposit){
+  public void depositMoney(double deposit){
     if(deposit<=0){
         System.out.println("You cannot deposit");
     }
@@ -29,7 +43,7 @@ public class Account{
   }
 
 //withdraw money method
-  void withdrawMoney(double withdraw){
+  public void withdrawMoney(double withdraw){
     if(withdraw>this.balance || withdraw<=0){
         System.out.println("You cannot withdraw");
     } 
@@ -40,12 +54,12 @@ public class Account{
   }
 
 //changes the pin
-  void changePin(int updatePin){
+  public void changePin(int updatePin){
     this.pin=updatePin;
     System.out.println("Your pin has been updated");
   }
 
-  boolean pinLogin(int input){
+  public boolean pinLogin(int input){
     if(input==this.pin){
         System.out.println("You are logged in!");
         return true;
