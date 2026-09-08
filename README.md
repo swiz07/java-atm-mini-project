@@ -1,14 +1,18 @@
 # Java ATM Simulator
 
-A Java ATM mini project I'm building while revising Java and practising object-oriented programming.
+A Java ATM project I'm building while revising Java and practising object-oriented programming.
 
 ## Concepts
 - Classes
 - Objects
 - Methods
-- Parameters
+- Parameters and arguments
 - Constructors
 - this
+- private and public modifiers
+- final
+- Getters and setters
+- Encapsulation
 - if/else
 - switch
 - Loops
@@ -25,12 +29,14 @@ The project currently includes:
 - Withdrawing money
 - Changing PIN
 - PIN login
+- Private fields using encapsulation
+- Getter methods for account information
+- A setter method for changing the account name
 
 ## Future Improvements
 - Add multiple accounts
 - Improve input validation
 - Add PIN attempt limits
-- Use encapsulation with private fields
 - Improve error handling
 
 This project is being developed step by step as I revise and improve my Java skills.
